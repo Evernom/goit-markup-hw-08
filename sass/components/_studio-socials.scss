@@ -1,0 +1,35 @@
+.studio-socials {
+  margin-left: 70px;
+  margin-top: 72px;
+}
+.studio-socials__title {
+  font-size: 14px;
+  line-height: 1.14285714;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $logo-footer-color;
+}
+.socials-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socials-set__item--footer {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.socials-set__link--footer {
+  background-color: $social-footer-color;
+  color: $logo-footer-color;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+    background-color: $button-link-color;
+ }
+}

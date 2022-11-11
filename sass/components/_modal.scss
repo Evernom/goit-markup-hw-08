@@ -1,0 +1,55 @@
+.modal {
+  position: absolute;
+  background-color: $logo-footer-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  min-width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $logo-footer-color;
+  color: $logo-header-color;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $button-link-color;
+ }
+}
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  fill: currentColor;
+  transform: translate(48%, -50%);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+  fill: currentColor;
+ }
+}
+
+.modal__title {
+  font-size: 20px;
+  text-align: center;
+  margin: 40px auto 12px;
+}
