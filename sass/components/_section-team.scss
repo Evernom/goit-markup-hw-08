@@ -3,10 +3,16 @@
   text-align: center;
 }
 .section-team__title {
-  font-size: 36px;
-  line-height: 1.16666667;
+  font-size: 28px;
+  line-height: 1.178571;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16666667;
+  }
 }
 .card-set {
   display: flex;
@@ -18,7 +24,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $logo-footer-color;
-  flex-basis: calc((100% - 90px) / 4);
+
+
+  @media screen and (min-width:480px) {
+    width: 100%;
+  }
+
+
+  @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .card-set__title {
   font-weight: 500;

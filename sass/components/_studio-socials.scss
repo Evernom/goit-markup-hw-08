@@ -1,6 +1,16 @@
 .studio-socials {
-  margin-left: 70px;
-  margin-top: 72px;
+  text-align: center;
+  margin-top: 60px;
+
+  @media screen and (min-width:768px) {
+    margin-left: 165px;
+    margin-top: 65px;
+  }
+  @media screen and (min-width:1200px) {
+    text-align: start;
+    margin-left: 70px;
+    margin-top: 72px;
+  }
 }
 .studio-socials__title {
   font-size: 14px;

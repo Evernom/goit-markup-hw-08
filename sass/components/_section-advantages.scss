@@ -8,7 +8,7 @@
  }
 }
 .advantages-set__background {
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-color: $section-color;
   text-align: center;
@@ -16,12 +16,20 @@
   padding-bottom: 25px;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and (min-width:1200px) {
+    width: 270px;
+  }
 }
 .advantages-set__title {
   font-size: 14px;
   line-height: 1.14285714;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (max-width:767px) {
+    text-align: center;
+  }
 }
 .advantages-set__text {
   font-size: 14px;
