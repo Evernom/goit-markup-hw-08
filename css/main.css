@@ -30,6 +30,7 @@ ul {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
@@ -185,6 +186,7 @@ ul {
 
 .mobile-socials-menu {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
   margin-left: 40px;
 }
