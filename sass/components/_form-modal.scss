@@ -1,9 +1,15 @@
 .form-modal {
-  width: 370px;
+  max-width: 370px;
+  padding-left: 10px;
   margin: 0 auto;
 
+  @media screen and (max-width:479px) {
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+
   @media screen and (min-width:1200px) {
-    width: 448px;
+  max-width: 448px;
   }
 }
 .field {
@@ -69,10 +75,6 @@
 .checkbox {
   display: flex;
   margin-top: 20px;
-
-  @media screen and (min-width:1200px) {
-    margin-left: 13px;
-  }
 }
 .checkbox__lable {
   display: inline-flex;

@@ -4,8 +4,19 @@
   gap: 30px;
 
    &__item {
-   flex-basis: calc((100% - 90px) / 4);
- }
+
+ @media screen and (max-width:768px) {
+     max-width: 450px;
+  }
+
+ @media screen and (min-width:768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width:1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+   }
 }
 .advantages-set__background {
   height: 120px;
@@ -15,18 +26,6 @@
   padding-bottom: 25px;
   border-radius: 4px;
   margin-bottom: 30px;
-
-  @media screen and (min-width:480px) {
-    width: 450px;
-  }
-
-@media screen and (min-width:768px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width:1200px) {
-    width: 270px;
-  }
 }
 .advantages-set__title {
   font-size: 14px;
