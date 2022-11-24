@@ -60,16 +60,12 @@ text-decoration: none;
 }
 }
 .mobile-contacts{
-  margin-left: 40px;
-  margin-bottom: 64px;
+  margin: auto 0 64px 40px;
 
   @media (min-width: 768px) {
     display: none;
 }
 
-  @media (min-height: 765px) {
-    margin-top: 302px;
-}
 }
 .mobile-contacts__item{
   margin-top: 32px;
