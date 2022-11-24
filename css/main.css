@@ -280,6 +280,7 @@ ul {
 
 .header-contacts {
   display: flex;
+  margin-left: auto;
 }
 @media screen and (max-width: 767px) {
   .header-contacts {
